@@ -1,6 +1,7 @@
 # Vogala: Dutch Courses Online
 
 Mock-up (Feb 2022). Simple home page of made-up company offering Dutch Courses online to experiment with responsive web design.
+Published on [GitHub Pages](https://bobcorthals.github.io/vogala/).
 
 ### Technologies
 
