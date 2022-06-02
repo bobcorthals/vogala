@@ -1,0 +1,449 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: seashell;
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 16px;
+}
+
+nav.menu {
+  box-sizing: border-box;
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid black;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 4.5rem;
+  background-color: seashell;
+  z-index: 100;
+}
+
+nav.menu ul{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-left li {
+  margin-right: 1rem;
+}
+
+.menu-left li:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.menu-right li:nth-child(3) {
+  margin-right: 0px;
+}
+
+.menu-right li {
+  margin-right: 1.2rem;
+  font-size: 1.5rem;
+  background-color: rgb(253,196,72);
+  padding: 0.25rem 1rem;
+  border: 0.0625rem solid rgb(253,196,72);
+  border-radius: 5%;
+  filter: drop-shadow(0 0 0.0625rem black);
+}
+
+.dropdown {
+  display: none !important;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+#logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+#title {
+  font-size: 2rem;
+}
+
+#title-small {
+  display: none;
+  font-size: 2rem;
+}
+
+.banner {
+  background-image: url('../images/amsterdam-evening.jpg');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.text-over {
+  text-align: center;
+  color: seashell;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.text-over h1 {
+  margin-top: 3rem;
+  font-size: 6rem;
+  border: 0.5rem solid seashell;
+  padding: 2rem;
+  width: auto;
+  display: inline-block;
+  background-color: rgba(26, 25, 27, .7);
+}
+
+.text-over p {
+  font-size: 3rem;
+  color: black;
+  width: 100%;
+  background-color: rgba(255, 245, 238, .8);
+  line-height: 1.5;
+}
+
+#courses h1, #reviews h1, #team h1 {
+  display: inline-block;
+  margin: 2rem auto;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 0.125rem solid black;
+  border-radius: 2.5%;
+  text-transform: uppercase;
+}
+
+#reviews h1 {
+  margin-top: 1rem;
+}
+
+.courses-container {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  /* margin-bottom: 1.5rem; */
+} 
+
+.course-box {
+  display: flex;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  width: 14rem;
+  height: 20rem;
+  background-color: hsl(41, 98%, 64%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding: 1rem 1rem;
+  line-height: 1.5;
+  border-radius: 2.5%;
+  transition: 0.4s;
+  filter: drop-shadow(0 0 0.125rem black);
+  /* z-index: -10; */
+}
+
+.content {
+  padding-left: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.star {
+  height: 2rem;
+  padding: 0 0.25rem;
+}
+
+.course-box ul {
+  list-style-type: disc;
+  padding-inline-start: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.content {
+  text-align: left;
+  border-top: 0.125rem dashed black;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.course-box p {
+  margin-top: 0.25rem;
+}
+
+footer {
+  height: 3.75rem;
+  width: auto;
+  margin-top: 4rem;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(27, 114, 190);
+  border-top: 0.0625rem solid rgb(27, 114, 190);
+  position: sticky;
+}
+
+#hebban {
+  position: relative;
+  display: inline;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.team-box {
+  padding: 0 2rem;
+  flex-shrink: 1;
+}
+
+.team-box h2 {
+  line-height: 1.5;
+  background-color: whitesmoke;
+}
+
+.team-box p {
+  display: block;
+  line-height: 1.5;
+  background-color: whitesmoke;
+}
+
+.team-container {
+  display: flex;
+  max-width: 900px;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-content: space-between;
+  padding: 2rem;
+  justify-content: center;
+  background-color: whitesmoke;
+  background-image: url('../images/hebban-olla-vogala.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 100%;
+  filter: drop-shadow(0 0 0.125rem black);
+  flex-direction: row;
+} 
+.team-box img {
+  max-width: 200px;
+  flex: 33%;
+  padding: 1rem 0.5rem;
+  filter: drop-shadow(0 0 0.125rem black);
+}
+
+:target {
+  scroll-margin-top: 4rem;
+}
+
+.reviews-container {
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  max-width: 90%;
+  width: auto;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* filter: drop-shadow(0 0 0.125rem black); */
+}
+
+.review-box {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  width: 200px;
+  padding: 1rem;
+  row-gap: .5rem;
+  background-color: #fed6b9;
+  justify-content: flex-start;
+  /* border-radius: 5%; */
+}
+
+.full {
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.empty {
+  font-size: 1.5rem;
+}
+
+.review-box p {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.review-box-item:nth-last-child(2) {
+  margin-bottom: auto;
+}
+
+.review-box-item:nth-last-child(1) {
+  border-top: 0.125rem dashed black;
+  padding-top: 0.5rem;
+}
+
+#emoji {
+  width: 1.2rem;
+}
+
+.select {
+  display: none;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: lightblue;
+  font-size: 1rem;
+  border: 0.0625rem solid black;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.course-box .content {
+  margin-bottom: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .menu-right li {
+    font-size: 1.2rem;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #title-small {
+    display: block;
+  }
+
+  .banner {
+    max-height: 300px;
+  }
+
+  .text-over p {
+    font-size: 1.5rem;
+  }
+
+  #courses h1, #reviews h1, #team h1 {
+    font-size: 1.5rem;
+  }
+
+  .team-box img {
+    flex: 50;
+  }
+
+}
+
+@media only screen and (max-width: 904px) {
+
+    .team-container {
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title-small {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .menu-right li {
+    display: none;
+  }
+  
+/* w3schools hover */
+
+  .dropdown {
+    display: flex !important;
+    /* border: 1px solid red; */
+    width: auto;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .team-box img {
+    flex: 100;
+  }
+
+}
+
+@media only screen and (max-width: 290px) {
+  
+  .menu-right {
+    margin-right: 0 !important;
+  }
+  
+  .course-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-primary {
+    width: 90%;
+  }
+
+}
+
+@media (hover: hover) {
+
+  .menu-right li:hover {
+    background-color: rgb(245,129,3);
+    border: 0.125rem solid rgb(245,109,3);
+    box-shadow: -0.0625rem 0.125rem 0.125rem #1a191b;
+    transition: 0.5s;
+    cursor: pointer;
+  }  
+
+  .course-box:hover {
+    background-color: rgb(245,129,3);
+    border: 0.125rem solid rgb(245,109,3);
+    box-shadow: -0.0625rem 0.125rem 0.125rem #1a191b;
+    cursor: pointer;
+  }
+
+}
+
+@media (hover: none) {
+  .select {
+    display: block;
+  }
+
+  .btn-primary {
+    transition: 0.5s;
+  }
+
+  .btn-primary:active {
+    background-color: azure;
+  }
+
+  .menu-right li {
+    transition: 0.5s;
+  }
+  .menu-right li:active {
+    background-color: rgb(245,129,3);
+  }
+}
+
+
+
